@@ -35,10 +35,11 @@ class RootFragment : Fragment() {
                 0->{
                     tab.setIcon(R.drawable.ic_baseline_data_usage_24)
                 }
-                1->tab.setIcon(R.drawable.ic_baseline_filter_2_24)
+                1->{
+                    tab.setIcon(R.drawable.ic_baseline_filter_2_24)
+                }
             }
         }.attach()
         return view
     }
-
 }
