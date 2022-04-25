@@ -11,7 +11,7 @@
         android:layout_height="match_parent"
         android:text="@string/splash"
         android:gravity="center"
-        android:TextSize="34sp"
+        android:textSize="34sp"
         android:textStyle="bold"
         />
 

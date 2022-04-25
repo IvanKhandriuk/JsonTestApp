@@ -15,6 +15,7 @@ class StartViewModel:ViewModel() {
 
     fun getNalMoney(){
         viewModelScope.launch {
+            myMoneyList.value=repo.getNal()
 
         }
     }
