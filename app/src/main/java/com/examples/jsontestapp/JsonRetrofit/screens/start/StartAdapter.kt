@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.examples.jsontestapp.JsonRetrofit.model.Authorization.AuthorizationItem
 import com.examples.jsontestapp.JsonRetrofit.model.Nal.NalichkaItem
 import com.examples.jsontestapp.R
 import kotlinx.android.synthetic.main.item_parametrs_layout.view.*
@@ -12,6 +13,7 @@ import kotlinx.android.synthetic.main.item_parametrs_layout.view.*
 class StartAdapter: RecyclerView.Adapter<StartAdapter.StartViewHolder>(){
 
     var listStart= emptyList<NalichkaItem>()
+    var listEnergy= emptyList<AuthorizationItem>()
 
     class StartViewHolder(view: View):RecyclerView.ViewHolder(view)
 
@@ -24,7 +26,6 @@ class StartAdapter: RecyclerView.Adapter<StartAdapter.StartViewHolder>(){
         holder.itemView.item_name.text=listStart[position].ccy
         holder.itemView.item_buy.text=listStart[position].buy
         holder.itemView.item_sale.text=listStart[position].sale
-
     }
 
     override fun getItemCount(): Int{
