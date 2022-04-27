@@ -4,8 +4,8 @@ import com.examples.jsontestapp.JsonRetrofit.data.api.RetrofitInstanceAuthorizat
 import com.examples.jsontestapp.JsonRetrofit.model.Authorization.AuthorizationItem
 import retrofit2.Response
 
-class RepositoryEnergy {
+class RepositoryAuthorization {
     suspend fun getAuthorizationCode(): AuthorizationItem {
-        return RetrofitInstanceAuthorization.API.getAuthorizationCode()
+        return RetrofitInstanceAuthorization.API.setAuthorization()
     }
 }

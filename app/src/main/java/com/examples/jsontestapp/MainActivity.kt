@@ -11,6 +11,8 @@ import com.examples.jsontestapp.JsonRetrofit.data.repository.RepositoryAuthoriza
 
 class MainActivity : AppCompatActivity() {
 
+
+
     private lateinit var viewModel: MainViewModel
 
     override fun onCreate(savedInstanceState: Bundle?) {
