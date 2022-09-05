@@ -28,7 +28,7 @@ class RootFragment : Fragment() {
     ): View? {
         val view=inflater.inflate(R.layout.fragment_root, container, false)
         view.tab_layout.tabIconTint=null
-        view.view_pager.adapter=ViewPagerAdapter(ctx as FragmentActivity)
+        view.view_pager.adapter= ViewPagerAdapter(ctx as FragmentActivity)
         TabLayoutMediator(view.tab_layout,view.view_pager){
             tab, pos->
             when(pos){
